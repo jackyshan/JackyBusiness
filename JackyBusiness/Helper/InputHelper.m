@@ -56,7 +56,7 @@
                                 tag:(NSInteger)tag
                           addToView:(UIView *)view
                               frame:(CGRect)frame
-                         supportAotuLayout:(BOOL)bAL
+                  supportAotuLayout:(BOOL)bAL
 
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -213,5 +213,28 @@
     }
     return nil;
 }
+
+// 去掉html格式和转义字符
++ (NSString *)filterHtmlTag:(NSString *)html trimWhiteSpace:(BOOL)trim
+{
+    NSString *result = [html stringByReplacingOccurrencesOfString:@"&lt;" withString:@"<"];
+    result=[result stringByReplacingOccurrencesOfString:@"&gt;" withString:@">"];
+    
+    NSScanner *theScanner = [NSScanner scannerWithString:result];
+    NSString *text = nil;
+    while ([theScanner isAtEnd] == NO) {
+        // find start of tag
+        [theScanner scanUpToString:@"<" intoString:NULL];
+        // find end of tag
+        [theScanner scanUpToString:@">" intoString:&text];
+        // replace the found tag with a space
+        //(you can filter multi-spaces out later if you wish)
+        result = [result stringByReplacingOccurrencesOfString:
+                  [ NSString stringWithFormat:@"%@>", text]
+                                                   withString:@"\n"];
+    }
+    return trim ? [result stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : result;
+}
+
 
 @end

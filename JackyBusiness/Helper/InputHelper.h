@@ -82,4 +82,7 @@
 + (NSString *)convertToJsonString:(id)source options:(BOOL)plain;
 + (id)jsonConvertToObject:(NSString *)source;
 
+// 去掉html格式和转义字符
++ (NSString *)filterHtmlTag:(NSString *)html trimWhiteSpace:(BOOL)trim;
+
 @end
