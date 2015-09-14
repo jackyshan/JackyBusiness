@@ -115,4 +115,8 @@
 #define COLOR_L1 [UIColor colorWithRed:0xe1 / 255.0f green:0xe2 / 255.0f blue:0xe1 / 255.0f alpha:1.0f]
 #define COLOR_L2 [UIColor colorWithRed:0xfd / 255.0f green:0x5c / 255.0f blue:0x02 / 255.0f alpha:1.0f]
 
+// 字体
+#define ZT_DFSHAONV @"DFShaoNvW5"
+#define ZT_FANGYUAN @"DFFangYuanW7"
+
 #endif

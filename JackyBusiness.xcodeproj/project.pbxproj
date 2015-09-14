@@ -35,8 +35,6 @@
 		180198E91BA5586B007CCF5D /* LZZAudioHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196F91BA5586A007CCF5D /* LZZAudioHandler.m */; };
 		180198EA1BA5586B007CCF5D /* MGRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196FB1BA5586A007CCF5D /* MGRecorder.m */; };
 		180198EB1BA5586B007CCF5D /* LocationServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196FF1BA5586A007CCF5D /* LocationServer.m */; };
-		180198EC1BA5586B007CCF5D /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 180197041BA5586A007CCF5D /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		180198EE1BA5586B007CCF5D /* U6Socket.m in Sources */ = {isa = PBXBuildFile; fileRef = 180197081BA5586A007CCF5D /* U6Socket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		180198EF1BA5586B007CCF5D /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801970C1BA5586A007CCF5D /* AESCrypt.m */; };
 		180198F01BA5586B007CCF5D /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801970E1BA5586A007CCF5D /* NSData+Base64.m */; };
 		180198F11BA5586B007CCF5D /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 180197101BA5586A007CCF5D /* NSData+CommonCrypto.m */; };
@@ -194,7 +192,6 @@
 		180199AB1BA5586B007CCF5D /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 180198BF1BA5586B007CCF5D /* UIImageView+HighlightedWebCache.m */; };
 		180199AC1BA5586B007CCF5D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 180198C11BA5586B007CCF5D /* UIImageView+WebCache.m */; };
 		180199AD1BA5586B007CCF5D /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 180198C31BA5586B007CCF5D /* UIView+WebCacheOperation.m */; };
-		18DA22291BA5756D0003C77A /* NSData+GZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DA22281BA5756D0003C77A /* NSData+GZip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -280,10 +277,6 @@
 		180196FD1BA5586A007CCF5D /* ARGPSCoord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGPSCoord.h; sourceTree = "<group>"; };
 		180196FE1BA5586A007CCF5D /* LocationServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationServer.h; sourceTree = "<group>"; };
 		180196FF1BA5586A007CCF5D /* LocationServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationServer.m; sourceTree = "<group>"; };
-		180197031BA5586A007CCF5D /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
-		180197041BA5586A007CCF5D /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
-		180197071BA5586A007CCF5D /* U6Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = U6Socket.h; sourceTree = "<group>"; };
-		180197081BA5586A007CCF5D /* U6Socket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = U6Socket.m; sourceTree = "<group>"; };
 		1801970B1BA5586A007CCF5D /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
 		1801970C1BA5586A007CCF5D /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
 		1801970D1BA5586A007CCF5D /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -618,8 +611,6 @@
 		180198C21BA5586B007CCF5D /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		180198C31BA5586B007CCF5D /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		18D68A0C1BA560100055C3B1 /* JackyBusiness.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JackyBusiness.pch; sourceTree = "<group>"; };
-		18DA22271BA5756D0003C77A /* NSData+GZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GZip.h"; sourceTree = "<group>"; };
-		18DA22281BA5756D0003C77A /* NSData+GZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GZip.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -828,7 +819,6 @@
 				180196EF1BA5586A007CCF5D /* DataBase */,
 				180196F41BA5586A007CCF5D /* IMMessage */,
 				180196FC1BA5586A007CCF5D /* Location */,
-				180197021BA5586A007CCF5D /* Socket */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -892,19 +882,6 @@
 				180196FF1BA5586A007CCF5D /* LocationServer.m */,
 			);
 			path = Location;
-			sourceTree = "<group>";
-		};
-		180197021BA5586A007CCF5D /* Socket */ = {
-			isa = PBXGroup;
-			children = (
-				18DA22271BA5756D0003C77A /* NSData+GZip.h */,
-				18DA22281BA5756D0003C77A /* NSData+GZip.m */,
-				180197031BA5586A007CCF5D /* AsyncSocket.h */,
-				180197041BA5586A007CCF5D /* AsyncSocket.m */,
-				180197071BA5586A007CCF5D /* U6Socket.h */,
-				180197081BA5586A007CCF5D /* U6Socket.m */,
-			);
-			path = Socket;
 			sourceTree = "<group>";
 		};
 		180197091BA5586A007CCF5D /* Vendors */ = {
@@ -1608,7 +1585,6 @@
 				1801996B1BA5586B007CCF5D /* RACMulticastConnection.m in Sources */,
 				180199AD1BA5586B007CCF5D /* UIView+WebCacheOperation.m in Sources */,
 				180199161BA5586B007CCF5D /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
-				180198EC1BA5586B007CCF5D /* AsyncSocket.m in Sources */,
 				1801996D1BA5586B007CCF5D /* RACPassthroughSubscriber.m in Sources */,
 				180199701BA5586B007CCF5D /* RACReturnSignal.m in Sources */,
 				180198F21BA5586B007CCF5D /* NSString+Base64.m in Sources */,
@@ -1639,7 +1615,6 @@
 				1801994B1BA5586B007CCF5D /* NSObject+RACPropertySubscribing.m in Sources */,
 				180198E21BA5586B007CCF5D /* UINavigationController+Autorotate.m in Sources */,
 				180198E51BA5586B007CCF5D /* UIView+Shake.m in Sources */,
-				180198EE1BA5586B007CCF5D /* U6Socket.m in Sources */,
 				1801994E1BA5586B007CCF5D /* NSSet+RACSequenceAdditions.m in Sources */,
 				180199461BA5586B007CCF5D /* NSNotificationCenter+RACSupport.m in Sources */,
 				180199861BA5586B007CCF5D /* UIActionSheet+RACSignalSupport.m in Sources */,
@@ -1681,7 +1656,6 @@
 				180199621BA5586B007CCF5D /* RACEmptySignal.m in Sources */,
 				180199761BA5586B007CCF5D /* RACSignal.m in Sources */,
 				180199841BA5586B007CCF5D /* RACUnit.m in Sources */,
-				18DA22291BA5756D0003C77A /* NSData+GZip.m in Sources */,
 				180199AB1BA5586B007CCF5D /* UIImageView+HighlightedWebCache.m in Sources */,
 				180198D01BA5586B007CCF5D /* DashLineView.m in Sources */,
 				180198CA1BA5586B007CCF5D /* ClickImageView.m in Sources */,
