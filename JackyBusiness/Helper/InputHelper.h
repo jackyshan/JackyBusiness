@@ -79,5 +79,7 @@
 
 + (void)addStrikethroughStyleAttributeWithAttributedString:(NSMutableAttributedString *)attributedString range:(NSRange)range;
 
++ (NSString *)convertToJsonString:(id)source options:(BOOL)plain;
++ (id)jsonConvertToObject:(NSString *)source;
 
 @end

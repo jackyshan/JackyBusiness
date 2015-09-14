@@ -191,4 +191,27 @@
                              range:range];
 }
 
++ (NSString *)convertToJsonString:(id)source options:(BOOL)plain
+{
+    if ([NSJSONSerialization isValidJSONObject:source]) {
+        NSError *error;
+        NSData *data = [NSJSONSerialization dataWithJSONObject:source options:plain?kNilOptions:NSJSONWritingPrettyPrinted error:&error];
+        if (!error) {
+            return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        }
+    }
+    return nil;
+}
+
++ (id)jsonConvertToObject:(NSString *)source
+{
+    NSData *data = [source dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    id object = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if (!error) {
+        return object;
+    }
+    return nil;
+}
+
 @end
