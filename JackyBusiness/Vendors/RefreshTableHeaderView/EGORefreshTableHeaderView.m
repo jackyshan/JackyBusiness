@@ -97,6 +97,13 @@
 		
 		
 		[self setState:EGOOPullRefreshNormal];
+        
+        //箭头和activity居中，隐藏_status和_last
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        layer.frame = CGRectMake((width-55)/2, -58.0f, 30.0f, 55.0f);
+        view.frame = CGRectMake((width-20)/2, -38.0f, 20.0f, 20.0f);
+        _statusLabel.hidden = YES;
+        _lastUpdatedLabel.hidden = YES;
 		
     }
 	
