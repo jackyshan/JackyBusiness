@@ -267,8 +267,8 @@
         if (nil == error) {
             [UIView animateWithDuration:ANI_TIME animations:^{
                 CGRect rect = _imgV.frame;
-                rect.size.width = image.size.width*0.5f;
-                rect.size.height = image.size.height*0.5f;
+                rect.size.width = image.size.width>320?image.size.width*0.5f:image.size.width;
+                rect.size.height = image.size.height>480?image.size.height*0.5f:image.size.height;
                 _imgV.frame = rect;
                 _imgV.center = _scrollView.center;
                 [_scrollView setContentSize:CGSizeMake(_imgV.width + ABS(_imgV.left), _imgV.height)];
