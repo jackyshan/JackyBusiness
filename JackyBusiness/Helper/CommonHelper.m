@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "NSString+Base64.h"
 #import <CoreLocation/CLLocationManager.h>
+#import "BlockAlertView.h"
 
 @implementation CommonHelper
 
@@ -191,24 +192,11 @@
 	[hud hide:YES afterDelay:1.0];
 }
 
-+ (NSString *)getCouponStatus:(NSInteger)status {
-	switch (status) {
-		case 1:
-			return @"已经激活";
-
-		case 2:
-			return @"立即使用";
-
-		case 3:
-			return @"已经使用";
-
-		case 4:
-			return @"已过期";
-
-		default:
-			return @"";
-			break;
-	}
++ (void)showMessage:(NSString *)message {
+    BlockAlertView *alert = [[BlockAlertView alloc] init];
+    [alert addTitle:@"好的" block:nil];
+    alert.alertMessage = message;
+    [alert show];
 }
 
 + (NSString *)getCarrierName:(NSString *)phoneNum {

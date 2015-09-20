@@ -134,13 +134,11 @@ typedef NS_ENUM (NSInteger, AppType) {
 + (void)showMessage:(UIView *)view message:(NSString *)str;
 
 /**
- *  获得现金券状态
+ *  弹出确定框
  *
- *  @param status 类型
- *
- *  @return str
+ *  @param message 弹出内容
  */
-+ (NSString *)getCouponStatus:(NSInteger)status;
++ (void)showMessage:(NSString *)message;
 
 /**
  *  获取运营商名称 非法的格式返回nil
