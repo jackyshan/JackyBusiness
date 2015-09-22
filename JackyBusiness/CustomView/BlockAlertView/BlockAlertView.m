@@ -62,10 +62,13 @@
         UIActionSheet *sheet = [[UIActionSheet alloc] init];
         sheet.title = _alertTitle;
         sheet.delegate = self;
+        BlockAlertModel *cancel = [[BlockAlertModel alloc] initWithTitle:@"取消" block:nil];
+        [_models addObject:cancel];
         [_models enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             BlockAlertModel *model = obj;
             model.index = [sheet addButtonWithTitle:model.title];
         }];
+        sheet.cancelButtonIndex = _models.count-1;
         [sheet showInView:view];
         
         return;
