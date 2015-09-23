@@ -52,7 +52,9 @@
         // 如果第一次安装，离线数据库不存在,拷贝离线数据库
         if (NO == [[NSFileManager defaultManager] fileExistsAtPath:fileNameString]) {
             NSString * docPath = [[NSBundle mainBundle] pathForResource:@"db" ofType:@"sqlite3"];
-            [[NSFileManager defaultManager] copyItemAtPath:docPath toPath:fileNameString error:NULL];
+            if (docPath) {
+                [[NSFileManager defaultManager] copyItemAtPath:docPath toPath:fileNameString error:NULL];
+            }
         }
         //初始化用户数据库连接
         fileNameString = [filePathString stringByAppendingPathComponent:databaseName];
