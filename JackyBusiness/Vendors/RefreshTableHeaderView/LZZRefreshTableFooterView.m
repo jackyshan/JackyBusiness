@@ -123,6 +123,9 @@
 }
 
 - (void)setState:(LZZPullRefreshState)aState{
+    if (_state == LZZPullRefreshNoMore) {
+        return;
+    }
     
     switch (aState) {
         case LZZPullRefreshPulling:
@@ -158,6 +161,16 @@
             
             _statusLabel.text = NSLocalizedString(@"努力加载中...", @"Loading Status");
             [_activityView startAnimating];
+            [CATransaction begin];
+            [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
+            _arrowImage.hidden = YES;
+            [CATransaction commit];
+            
+            break;
+        case LZZPullRefreshNoMore:
+            _statusLabel.text = NSLocalizedString(@"No More ...", @"Loading Status");
+            _statusLabel.hidden = NO;
+            [_activityView stopAnimating];
             [CATransaction begin];
             [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
             _arrowImage.hidden = YES;
@@ -256,6 +269,14 @@
     
 }
 
+- (void)endLoadingScroll {
+    [self setState:LZZPullRefreshNoMore];
+}
+
+- (void)setLoadingScroll {
+    _state = LZZPullRefreshNormal;
+}
+
 // fix
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
@@ -264,6 +285,9 @@
     
     UIScrollView *scrollView = (UIScrollView *)object;
     if ([@"contentOffset" isEqualToString:keyPath]) {
+        if (_state == LZZPullRefreshNoMore) {
+        return;
+        }
         
         if (scrollView.isDragging) {
             [self lzzRefreshScrollViewDidScroll:scrollView];

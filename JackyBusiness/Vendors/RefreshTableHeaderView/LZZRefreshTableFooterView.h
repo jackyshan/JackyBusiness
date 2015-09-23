@@ -13,6 +13,7 @@ typedef enum{
     LZZPullRefreshPulling = 0,
     LZZPullRefreshNormal,
     LZZPullRefreshLoading,
+    LZZPullRefreshNoMore,
 }   LZZPullRefreshState;
 
 @protocol LZZRefreshTableFooterViewDelegate;
@@ -38,6 +39,9 @@ typedef enum{
 - (void)lzzRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)lzzRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;
 - (void)lzzRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView;
+
+- (void)endLoadingScroll;
+- (void)setLoadingScroll;
 
 @end
 

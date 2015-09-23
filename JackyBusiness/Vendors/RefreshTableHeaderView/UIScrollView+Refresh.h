@@ -35,6 +35,10 @@
  */
 - (void)endFooterRefresh;
 
+/**
+ *  调用此方法显示是否没有更多了
+ */
+- (void)endFooterNoMore:(NSInteger)pageSize arr:(NSArray *)result;
 
 /**
  *  添加上拉加载更多

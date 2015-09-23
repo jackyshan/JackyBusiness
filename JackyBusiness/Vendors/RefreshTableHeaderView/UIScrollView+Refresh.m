@@ -105,6 +105,15 @@ static char LZZImmediateRefreshFooterViewKey;
     [self.footer lzzRefreshScrollViewDataSourceDidFinishedLoading:self];
 }
 
+- (void)endFooterNoMore:(NSInteger)pageSize arr:(NSArray *)result {
+    if (!result || pageSize > result.count) {
+        [self.footer endLoadingScroll];
+    }
+    else {
+        [self.footer setLoadingScroll];
+    }
+}
+
 - (void)addImmediateFooterWithCallback:(void (^)())callback pageSize:(NSInteger)count
 {
     
