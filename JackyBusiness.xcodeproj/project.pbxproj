@@ -1845,12 +1845,20 @@
 		180196741BA557FE007CCF5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JackyBusiness/Vendors",
+				);
 				GCC_PREFIX_HEADER = JackyBusiness.pch;
+				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JackyBusiness/Sections/IMMessage/Lame",
+					"$(PROJECT_DIR)/JackyBusiness/Vendors/UMAnalytics_Sdk_3.5.10",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1859,12 +1867,20 @@
 		180196751BA557FE007CCF5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JackyBusiness/Vendors",
+				);
 				GCC_PREFIX_HEADER = JackyBusiness.pch;
+				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JackyBusiness/Sections/IMMessage/Lame",
+					"$(PROJECT_DIR)/JackyBusiness/Vendors/UMAnalytics_Sdk_3.5.10",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

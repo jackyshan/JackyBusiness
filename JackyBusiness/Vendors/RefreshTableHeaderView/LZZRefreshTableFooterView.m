@@ -169,7 +169,6 @@
             break;
         case LZZPullRefreshNoMore:
             _statusLabel.text = NSLocalizedString(@"No More ...", @"Loading Status");
-            _statusLabel.hidden = NO;
             [_activityView stopAnimating];
             [CATransaction begin];
             [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
@@ -270,11 +269,13 @@
 }
 
 - (void)endLoadingScroll {
+    _statusLabel.hidden = NO;
     [self setState:LZZPullRefreshNoMore];
 }
 
 - (void)setLoadingScroll {
     _state = LZZPullRefreshNormal;
+    _statusLabel.hidden = YES;
 }
 
 // fix
