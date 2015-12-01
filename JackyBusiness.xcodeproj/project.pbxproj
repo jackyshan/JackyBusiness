@@ -199,10 +199,10 @@
 		6D2348C61BA95A91003A5EA3 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2348BC1BA95A91003A5EA3 /* SlideNavigationContorllerAnimatorSlideAndFade.m */; };
 		6D2348C71BA95A91003A5EA3 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2348C11BA95A91003A5EA3 /* SlideNavigationController.m */; };
 		6D2348CA1BA95B1B003A5EA3 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D2348C91BA95B1B003A5EA3 /* blueArrow.png */; };
-		6D2893141BB534D900E35B98 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2893111BB534D900E35B98 /* libMobClickLibrary.a */; settings = {ASSET_TAGS = (); }; };
-		6D2893431BB5365800E35B98 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D28932B1BB5365800E35B98 /* libUMSocial_Sdk_4.2.3.a */; settings = {ASSET_TAGS = (); }; };
-		6D2893461BB5365800E35B98 /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D28933E1BB5365800E35B98 /* libSocialWechat.a */; settings = {ASSET_TAGS = (); }; };
-		6D2893471BB5365800E35B98 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D28933F1BB5365800E35B98 /* libWeChatSDK.a */; settings = {ASSET_TAGS = (); }; };
+		6D2893141BB534D900E35B98 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2893111BB534D900E35B98 /* libMobClickLibrary.a */; };
+		6D2893431BB5365800E35B98 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D28932B1BB5365800E35B98 /* libUMSocial_Sdk_4.2.3.a */; };
+		6D2893461BB5365800E35B98 /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D28933E1BB5365800E35B98 /* libSocialWechat.a */; };
+		6D2893471BB5365800E35B98 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D28933F1BB5365800E35B98 /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

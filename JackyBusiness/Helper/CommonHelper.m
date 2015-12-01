@@ -192,11 +192,13 @@
 	[hud hide:YES afterDelay:1.0];
 }
 
+static BlockAlertView *_alert;
 + (void)showMessage:(NSString *)message {
     BlockAlertView *alert = [[BlockAlertView alloc] init];
     [alert addTitle:@"好的" block:nil];
     alert.alertMessage = message;
     [alert show];
+    _alert = alert;
 }
 
 + (NSString *)getCarrierName:(NSString *)phoneNum {
