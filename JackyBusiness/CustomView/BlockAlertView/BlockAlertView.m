@@ -109,7 +109,7 @@
         
         if (model.index == buttonIndex) {
             if (model.alertBlock) {
-                model.alertBlock(_result);
+                model.alertBlock(_result?_result:model.title);
             }
             *stop = YES;
         }

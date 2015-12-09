@@ -15,6 +15,7 @@
 
 #define bIOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
+#define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 #undef bLogSwitch
 #undef kSendLog
