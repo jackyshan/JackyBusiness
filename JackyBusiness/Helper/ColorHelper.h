@@ -33,4 +33,13 @@
  */
 + (UIImage*)getGrayImage:(UIImage*)sourceImage;
 
+/**
+ *  获取图片主色调
+ *
+ *  @param image 传入图片
+ *
+ *  @return 颜色
+ */
++ (UIColor*)mostColor:(UIImage *)image;
+
 @end
