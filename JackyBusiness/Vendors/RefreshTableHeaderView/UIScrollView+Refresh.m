@@ -101,7 +101,6 @@ static char LZZImmediateRefreshFooterViewKey;
 
 - (void)endFooterRefresh
 {
-    
     [self.footer lzzRefreshScrollViewDataSourceDidFinishedLoading:self];
 }
 
