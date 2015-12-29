@@ -59,7 +59,7 @@
 }
 
 + (NSString *)getDownloadRelativePath:(NSString *)str {
-	return [@"videoDownload" stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp4", str]];
+	return [@"videoDownload" stringByAppendingPathComponent:str];
 }
 
 + (BOOL)deleteDownloadFile:(NSString *)str {

@@ -849,7 +849,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 	} else {
 		// Draw background
 		[_progressTintColor setStroke];
-		[_backgroundTintColor setFill];
+		[[UIColor whiteColor] setFill];
 		CGContextSetLineWidth(context, 2.0f);
 		CGContextFillEllipseInRect(context, circleRect);
 		CGContextStrokeEllipseInRect(context, circleRect);
@@ -858,7 +858,8 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		CGFloat radius = (allRect.size.width - 4) / 2;
 		CGFloat startAngle = - ((float)M_PI / 2); // 90 degrees
 		CGFloat endAngle = (self.progress * 2 * (float)M_PI) + startAngle;
-		CGContextSetRGBFillColor(context, 1.0f, 1.0f, 1.0f, 1.0f); // white
+        CGContextSetFillColorWithColor(context, _backgroundTintColor.CGColor);
+        
 		CGContextMoveToPoint(context, center.x, center.y);
 		CGContextAddArc(context, center.x, center.y, radius, startAngle, endAngle, 0);
 		CGContextClosePath(context);
