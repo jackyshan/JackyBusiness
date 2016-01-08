@@ -186,8 +186,8 @@
 
 	MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:_parentView animated:YES];
 	hud.mode = MBProgressHUDModeText;
-	hud.margin = 10.f;
-	hud.labelText = str;
+//	hud.margin = 10.f;
+    hud.labelText = str;
 	hud.removeFromSuperViewOnHide = YES;
 	[hud hide:YES afterDelay:1.0];
 }
