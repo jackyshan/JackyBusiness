@@ -15,6 +15,8 @@
 
 #define bIOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
+#define isDeviceIPad ([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPad)
+
 #define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 #define kiOSVersion [[UIDevice currentDevice] systemVersion]
 

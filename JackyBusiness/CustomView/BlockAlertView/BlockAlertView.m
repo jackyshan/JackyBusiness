@@ -69,7 +69,13 @@
             model.index = [sheet addButtonWithTitle:model.title];
         }];
         sheet.cancelButtonIndex = _models.count-1;
-        [sheet showInView:view];
+        
+        if (isDeviceIPad) {
+            [sheet showFromRect:view.bounds inView:view animated:YES];
+        }
+        else {
+            [sheet showInView:view];
+        }
         
         return;
     }
