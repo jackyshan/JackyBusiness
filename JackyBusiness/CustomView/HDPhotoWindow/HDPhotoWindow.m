@@ -35,7 +35,7 @@
     if (self = [super init]) {
         self.frame = [UIApplication sharedApplication].keyWindow.bounds;
         self.windowLevel = UIWindowLevelStatusBar + 1;
-        self.backgroundColor = COLOR_000000;
+        self.backgroundColor = COLOR_BLACK;
         
         _photos = [NSMutableArray array];
         
@@ -55,7 +55,7 @@
 - (void)show:(NSArray *)photos atIndex:(NSInteger)index alert:(BlockAlertView *)alert {
     self.hidden = NO;
     self.alpha =  1.f;
-    self.backgroundColor = COLOR_000000;
+    self.backgroundColor = COLOR_BLACK;
     
     _blockAlertView = nil;
     _blockAlertView = alert;

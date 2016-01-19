@@ -302,13 +302,6 @@ typedef NS_ENUM (NSInteger, AppType) {
 + (NSDictionary *)dictionaryWithContentsOfJSONString:(NSString *)fileLocation;
 
 
-/**
- * 构造无数据显示时TableView 的沉底提示
- */
-
-+ (UIView *)configureNoDataTipsViewInView:(UIView *)view tips:(NSString *)tips;
-
-
 + (NSString *)replaceUnicodeToUTF8:(NSString *)aUnicodeString;
 
 /**

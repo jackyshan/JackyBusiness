@@ -11,7 +11,6 @@
 		180198C71BA5586B007CCF5D /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196931BA5586A007CCF5D /* BlockAlertView.m */; };
 		180198CA1BA5586B007CCF5D /* ClickImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801969C1BA5586A007CCF5D /* ClickImageView.m */; };
 		180198CC1BA5586B007CCF5D /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196A21BA5586A007CCF5D /* CustomButton.m */; };
-		180198CD1BA5586B007CCF5D /* SectionSegmentLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196A51BA5586A007CCF5D /* SectionSegmentLineView.m */; };
 		180198CE1BA5586B007CCF5D /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196A81BA5586A007CCF5D /* CustomTextField.m */; };
 		180198CF1BA5586B007CCF5D /* DashLineVerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196AB1BA5586A007CCF5D /* DashLineVerView.m */; };
 		180198D01BA5586B007CCF5D /* DashLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180196AD1BA5586A007CCF5D /* DashLineView.m */; };
@@ -238,8 +237,6 @@
 		1801969C1BA5586A007CCF5D /* ClickImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickImageView.m; sourceTree = "<group>"; };
 		180196A11BA5586A007CCF5D /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		180196A21BA5586A007CCF5D /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
-		180196A41BA5586A007CCF5D /* SectionSegmentLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionSegmentLineView.h; sourceTree = "<group>"; };
-		180196A51BA5586A007CCF5D /* SectionSegmentLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionSegmentLineView.m; sourceTree = "<group>"; };
 		180196A71BA5586A007CCF5D /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
 		180196A81BA5586A007CCF5D /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
 		180196AA1BA5586A007CCF5D /* DashLineVerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashLineVerView.h; sourceTree = "<group>"; };
@@ -748,7 +745,6 @@
 				180196911BA5586A007CCF5D /* BlockAlertView */,
 				1801969A1BA5586A007CCF5D /* ClickImageView */,
 				180196A01BA5586A007CCF5D /* CustomButton */,
-				180196A31BA5586A007CCF5D /* CustomSegmentLine */,
 				180196A61BA5586A007CCF5D /* CustomTextField */,
 				180196A91BA5586A007CCF5D /* DashLineView */,
 				180196B01BA5586A007CCF5D /* HDPhotoWindow */,
@@ -784,15 +780,6 @@
 				180196A21BA5586A007CCF5D /* CustomButton.m */,
 			);
 			path = CustomButton;
-			sourceTree = "<group>";
-		};
-		180196A31BA5586A007CCF5D /* CustomSegmentLine */ = {
-			isa = PBXGroup;
-			children = (
-				180196A41BA5586A007CCF5D /* SectionSegmentLineView.h */,
-				180196A51BA5586A007CCF5D /* SectionSegmentLineView.m */,
-			);
-			path = CustomSegmentLine;
 			sourceTree = "<group>";
 		};
 		180196A61BA5586A007CCF5D /* CustomTextField */ = {
@@ -1834,7 +1821,6 @@
 				6D2348C71BA95A91003A5EA3 /* SlideNavigationController.m in Sources */,
 				6D2348C31BA95A91003A5EA3 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				1801990A1BA5586B007CCF5D /* JSONModelError.m in Sources */,
-				180198CD1BA5586B007CCF5D /* SectionSegmentLineView.m in Sources */,
 				180199111BA5586B007CCF5D /* MBProgressHUD.m in Sources */,
 				1801997E1BA5586B007CCF5D /* RACSubscriptionScheduler.m in Sources */,
 				1801990D1BA5586B007CCF5D /* JSONHTTPClient.m in Sources */,

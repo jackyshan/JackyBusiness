@@ -25,7 +25,7 @@
     CGContextRef context =UIGraphicsGetCurrentContext();
     CGContextBeginPath(context);
     CGContextSetLineWidth(context, 1.0);
-    CGContextSetStrokeColorWithColor(context, COLOR_D2D2D2.CGColor);
+    CGContextSetStrokeColorWithColor(context, [ColorHelper colorWithHexString:@"#d2d2d2"].CGColor);
     CGFloat lengths[] = {5,2};
     CGContextSetLineDash(context, 0, lengths, 2);
     CGContextMoveToPoint(context, 0, 0);
