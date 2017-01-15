@@ -32,6 +32,10 @@
 #define COLOR_T4 [UIColor colorWithRed:0xfd / 255.0f green:0x5c / 255.0f blue:0x02 / 255.0f alpha:1.0f]
 #define COLOR_T5 [UIColor colorWithRed:0xfc / 255.0f green:0x89 / 255.0f blue:0x4b / 255.0f alpha:1.0f]
 
+//可删除
+#define COLOR_FFFFFF [UIColor colorWithRed:0x7c / 255.0f green:0x7c / 255.0f blue:0x7d / 255.0f alpha:1.0f]
+#define COLOR_000000 [UIColor colorWithRed:0x7c / 255.0f green:0x7c / 255.0f blue:0x7d / 255.0f alpha:1.0f]
+
 // 色块类
 #define COLOR_B1 [UIColor colorWithRed:0x7c / 255.0f green:0x7c / 255.0f blue:0x7d / 255.0f alpha:1.0f]
 #define COLOR_B2 [UIColor colorWithRed:0xe1 / 255.0f green:0xe2 / 255.0f blue:0xe1 / 255.0f alpha:1.0f]
